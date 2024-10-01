@@ -1,1 +1,10 @@
-
+securityresources
+| where type == "microsoft. security/pricings"
+| extend PricingTier = properties.
+pricingTier
+| extend Deprecated = tostring(properties.deprecated)
+| extend SubPlan = properties.subPlan
+| extend extensions = properties.extensions
+| where isempty (resourceGroup)
+| project name, Deprecated, subscriptionId, PricingTier, SubPlan, extensions, properties
+| sort by Deprecated asc
