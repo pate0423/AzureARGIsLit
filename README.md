@@ -1,5 +1,4 @@
-# AzureARGIsLit
-Library of ARG queries 
+#AzureARGIsLit🔥
 
 #Tree
 
