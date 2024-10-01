@@ -7,3 +7,4 @@ resources
 | extend publisher = properties.publisher
 | extend typeHandlerVersion = properties.typeHandlerVersion
 | project MachineName, ExtName, ProvisioningState, MachineType, publisher, typeHandlerVersion, properties
+//I WISH project-reorder was a thing with ARG
