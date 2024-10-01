@@ -16,3 +16,29 @@ Library of ARG queries
   └── Scripts 
   ├── script1.py 
   └── script2.js
+
+  ### Folder: `scenario1`
+- **query1.sql**: Description of query 1.
+- **query2.sql**: Description of query 2.
+- **query3.sql**: Description of query 3.
+
+### Folder: `scenario2`
+- **query1.sql**: Description of query 1.
+- **query2.sql**: Description of query 2.
+- **query3.sql**: Description of query 3.
+
+### Folder: `scenario3`
+- **query1.sql**: Description of query 1.
+- **query2.sql**: Description of query 2.
+- **query3.sql**: Description of query 3.
+
+### Folder: `scenario4`
+- **query1.sql**: Description of query 1.
+- **query2.sql**: Description of query 2.
+- **query3.sql**: Description of query 3.
+
+## How to Use
+
+1. Clone the repository to your local machine.
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
