@@ -1,0 +1,9 @@
+resources
+| where  type == "microsoft.hybridcompute/machines/extensions" or type == "microsoft.compute/virtualmachines/extensions"
+| extend ProvisioningState = properties.provisioningState
+| extend ExtName = name
+| extend MachineName = split(id, "/")[8]
+| extend MachineType = split(id, "/")[6]
+| extend publisher = properties.publisher
+| extend typeHandlerVersion = properties.typeHandlerVersion
+| project MachineName, ExtName, ProvisioningState, MachineType, publisher, typeHandlerVersion, properties
