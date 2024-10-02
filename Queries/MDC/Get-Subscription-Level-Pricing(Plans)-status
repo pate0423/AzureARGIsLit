@@ -1,7 +1,6 @@
 securityresources
 | where type == "microsoft. security/pricings"
-| extend PricingTier = properties.
-pricingTier
+| extend PricingTier = properties.pricingTier
 | extend Deprecated = tostring(properties.deprecated)
 | extend SubPlan = properties.subPlan
 | extend extensions = properties.extensions
